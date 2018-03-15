@@ -1,4 +1,4 @@
-class CreateSpreeRolesPermissionSets < ActiveRecord::Migration[5.0]
+class CreateSpreeRolesPermissionSets < ActiveRecord::Migration
   def change
     create_table :spree_roles_permission_sets do |t|
       t.references :role, index: true, foreign_key: { to_table: :spree_roles }
